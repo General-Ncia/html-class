@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first webproject</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            
+        }
+        .header{
+            background-color: rgb(49, 223, 49);
+            color: white;
+            padding: 7px 8px;
+
+        }
+        nav a{
+            color: rgb(49, 223, 49);
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding-left: 20px;
+        }
+        nav{
+            margin: 20px 0px;
+        }
+
+        nav :hover{
+            background-color: blue;
+            color: wheat;
+        }
+        .pic{
+            padding-left: 20px;
+            width: 500px;
+            
+        }
+        .pic p{
+            text-align: center;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My First Webpage</h1>
+    </div>
+    <nav>
+        <a href="#webpage">Webpage Contents</a>
+        
+        <a href="#information">Information table</a>
+        
+        <a href="#contact">Contact form</a>
+    </nav>
+    <div class="pic">
+        <img src="./CHUKWUMA'S WAEC RESULT.png" alt="" height="200" width="500">
+        <p>
+            This is a paragraph describing the content of the webpage. It explains the purpose of the page 
+            and provides some basic informations about what users can expect to find
+           
+        </p>
+        <div>
+            <a href="https://www.techyjaunt.com" style="color: blue;" target="_blank">Visit Techyjaunt</a>
+        </div>
+        
+    </div>
+    
+    <!-- first section -->
+    <div id="webpage">
+        <h2>Webpage Contents</h2>
+        <ul>
+            <li>Introduction</li>
+            <li>Table of information</li>
+            <li>Contact Form</li>
+        </ul>
+    </div>
+    <!-- second section -->
+    <div id="information">
+        <h2>Information Table</h2>
+        <table border="1" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pens</td>
+                    <td>Blue ink pens</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Notebooks</td>
+                    <td>Spiral-bound Notebooks</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Markers</td>
+                    <td>Permanent markers</td>
+                    <td>2</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- third section -->
+    <div id="contact">
+        <h2>Contact form</h2>
+        <form action="">
+            <div>
+                <label for="username">Your name</label>
+                <input type="text" name="username" id="" placeholder="Enter your name">
+            </div>
+
+            <div>
+                <label for="useremail">E-mail</label>
+                <input type="email" name="useremail" id="">
+            </div>
+
+            <div>
+                <label for="userpassword">Password</label>
+                <input type="password" name="userpassword" id="">
+            </div>
+
+            <div>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+
+            <div>
+                <label for="numbers">Number of items</label>
+                <input type="number" name="numbers" id="">
+            </div>
+            <div>
+                <label for="check">Subscribe</label>
+                <input type="checkbox" name="check" value="subscribe"> Yes, I want to subscribe
+            </div>
+            <div>
+                <label for="dat">Date</label>
+                <input type="date" name="dat" id="">
+            </div>
+            <div>
+                <label for="comments">Message</label>
+                
+                <textarea name="comments" rows="4" cols="50" placeholder="Make your comments"></textarea>
+               
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+            
+            
+
+        </form>
+    </div>
+</body>
+</html>
